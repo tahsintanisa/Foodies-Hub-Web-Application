@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Foodies Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      🍔 Foodies Hub
+    </div>
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+
+      <li><a href="#menu">Menu</a></li>
+
+      <li><a href="#cart">Cart</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-buttons">
+
+      <button id="darkModeBtn">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <button id="loginBtn">
+        Login
+      </button>
+
+    </div>
+
+  </nav>
+
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+        Delicious Food Delivered Fast
+      </h1>
+
+      <p>
+        Order your favorite meals anytime anywhere.
+      </p>
+
+      <button class="hero-btn">
+        Order Now
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU SECTION -->
+
+  <section class="menu-section" id="menu">
+
+    <h2 class="section-title">
+      Popular Foods
+    </h2>
+
+    <div class="food-container" id="foodContainer">
+
+    </div>
+
+  </section>
+
+
+  <!-- CART SECTION -->
+
+  <section class="cart-section" id="cart">
+
+    <h2 class="section-title">
+      Your Cart
+    </h2>
+
+    <div id="cartItems">
+
+    </div>
+
+    <h3>
+      Total Price:
+      ৳<span id="totalPrice">0</span>
+    </h3>
+
+  </section>
+
+
+  <!-- CHECKOUT FORM -->
+
+  <section class="checkout-section">
+
+    <h2 class="section-title">
+      Checkout Form
+    </h2>
+
+    <form id="checkoutForm">
+
+      <input type="text"
+        id="name"
+        placeholder="Your Name">
+
+      <input type="email"
+        id="email"
+        placeholder="Your Email">
+
+      <input type="password"
+        id="password"
+        placeholder="Password">
+
+      <select id="payment">
+
+        <option value="">
+          Select Payment Method
+        </option>
+
+        <option>Cash On Delivery</option>
+
+        <option>Bkash</option>
+
+        <option>Nagad</option>
+
+      </select>
+
+
+      <!-- RADIO BUTTON -->
+
+      <div class="radio-group">
+
+        <label>
+          <input type="radio"
+            name="delivery"
+            value="Home Delivery">
+
+          Home Delivery
+        </label>
+
+        <label>
+          <input type="radio"
+            name="delivery"
+            value="Pickup">
+
+          Pickup
+        </label>
+
+      </div>
+
+
+      <!-- CHECKBOX -->
+
+      <div class="checkbox-group">
+
+        <label>
+          <input type="checkbox" id="terms">
+
+          Accept Terms & Conditions
+        </label>
+
+      </div>
+
+      <button type="submit">
+        Place Order
+      </button>
+
+      <p id="formMessage"></p>
+
+    </form>
+
+  </section>
+
+
+  <!-- LOGIN MODAL -->
+
+  <div class="login-modal hidden" id="loginModal">
+
+    <div class="login-box">
+
+      <h2>Login</h2>
+
+      <input type="email"
+        id="loginEmail"
+        placeholder="Enter Email">
+
+      <input type="password"
+        id="loginPassword"
+        placeholder="Enter Password">
+
+      <button id="loginSubmit">
+        Login
+      </button>
+
+      <p id="loginMessage"></p>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+ <!-- CONTACT SECTION -->
+
+<section class="contact-section" id="contact">
+
+  <h2 class="section-title">
+    Contact Us
+  </h2>
+
+  <div class="contact-container">
+
+    <div class="contact-card">
+
+      <i class="fa-solid fa-location-dot"></i>
+
+      <h3>Address</h3>
+
+      <p>Chattogram, Bangladesh</p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <i class="fa-solid fa-phone"></i>
+
+      <h3>Phone</h3>
+
+      <p>+880 1234-567890</p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <i class="fa-solid fa-envelope"></i>
+
+      <h3>Email</h3>
+
+      <p>foodieshub@gmail.com</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h3>🍔 Foodies Hub</h3>
+
+  <p>
+    Delicious food for everyone
+  </p>
+
+  <div class="social-icons">
+
+    <i class="fa-brands fa-facebook"></i>
+
+    <i class="fa-brands fa-instagram"></i>
+
+    <i class="fa-brands fa-twitter"></i>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 Foodies Hub. All Rights Reserved.
+  </p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
